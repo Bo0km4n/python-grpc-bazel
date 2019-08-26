@@ -1,0 +1,11 @@
+load("@build_stack_rules_proto//python:python_grpc_compile.bzl", "python_grpc_compile")
+proto_library(
+    name = "service_proto",
+    srcs = ["service.proto"],
+    deps = ["@com_google_protobuf//:any_proto"],
+)
+
+python_grpc_compile(
+    name = "service_python_grpc",
+    deps = [":service_proto"],
+)
