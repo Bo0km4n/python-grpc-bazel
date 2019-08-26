@@ -10,7 +10,7 @@ message Thing {
 }
 
 message Empty {
-    
+
 }
 
 service Health {

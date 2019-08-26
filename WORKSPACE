@@ -28,7 +28,6 @@ load(
 
 protobuf_deps()
 
-
 ### Python libraries
 
 git_repository(
@@ -77,3 +76,4 @@ load("@build_stack_rules_proto//python:deps.bzl", "python_grpc_library")
 
 python_grpc_library()
 grpc_deps()
+

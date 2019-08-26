@@ -37,7 +37,7 @@ expose_package () {
 			found=1
 			local base=${f##*/}
 			echo "Adding a new link: ${package}/${base}"
-			cp "$PWD/${f}" "${package}/"
+			ln -nsf "$PWD/${f}" "${package}/"
 		fi
 	done
 	if [[ "${found}" == "0" ]]; then
